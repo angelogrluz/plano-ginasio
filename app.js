@@ -5,41 +5,40 @@ const INICIO="2026-10-26";
 const NUT={kcal:2215,p:105,h:330,g:55};
 const GRP={h:"Hidratos",p:"Proteína",g:"Gordura",v:"Legumes e fruta"};
 const GYMX={
-A:{n:"A — Glúteos e pernas (agachar)",t:"inf",ex:[
-{n:"Agachamento goblet (→ agachamento com barra)",img:"Goblet_Squat",r:"8–12",d:"90''",m:1,c:"Halter junto ao peito, pés à largura dos ombros, joelhos na linha dos pés. Descer controlado até onde as costas se mantêm neutras. A partir da semana 7, se a técnica estiver sólida, pode passar a barra."},
-{n:"Hip thrust (barra ou máquina)",img:"Barbell_Hip_Thrust",r:"8–12",d:"90''",m:1,c:"Omoplatas no banco, queixo ao peito, subir até a anca ficar em linha com os joelhos e apertar os glúteos 1 s em cima. Não arquear a lombar."},
-{n:"Passadas a andar (lunges)",img:"Bodyweight_Walking_Lunge",r:"8–10 / perna",d:"90''",c:"Começar sem peso; depois halteres. Passo largo, tronco ligeiramente inclinado à frente para mais glúteo. Joelho de trás quase toca o chão."},
-{n:"Curl de pernas deitada",img:"Lying_Leg_Curls",r:"10–12",d:"60''",c:"Anca colada ao banco, subir e descer devagar (3 s a descer)."},
-{n:"Abdução na máquina",img:"Thigh_Abductor",r:"12–15",d:"60''",c:"Tronco ligeiramente inclinado à frente sente mais o glúteo médio. Pausa 1 s aberta."},
-{n:"Coice no cabo (kickback)",img:"Glute_Kickback",r:"12–15 / perna",d:"45''",c:"Ou com banda elástica. Perna empurra para trás e para cima sem arquear as costas; apertar o glúteo."}]},
-B:{n:"B — Tronco superior e core (leve a moderado)",t:"sup",ex:[
-{n:"Puxada ao peito (pulldown)",img:"Wide-Grip_Lat_Pulldown",r:"10–12",d:"75''",m:1,c:"Peito alto, puxar a barra até ao queixo/peito com os cotovelos para baixo. Sem balançar."},
-{n:"Remada sentada no cabo",img:"Seated_Cable_Rows",r:"10–12",d:"75''",c:"Costas direitas, puxar para o umbigo, juntar as omoplatas, voltar devagar."},
-{n:"Press de ombros com halteres (sentada)",img:"Dumbbell_Shoulder_Press",r:"8–12",d:"75''",c:"Costas apoiadas, cotovelos ligeiramente à frente, subir sem bater os halteres."},
-{n:"Elevações laterais",img:"Side_Lateral_Raise",r:"12–15",d:"45''",c:"Peso leve; subir até à altura dos ombros com cotovelos ligeiramente fletidos. Dá ombros redondos e cintura visualmente mais fina."},
-{n:"Flexões (progressão)",img:"Pushups",r:"6–12",d:"60''",c:"Começar com mãos num banco/barra alta; baixar a altura quando fizer 12 boas. Corpo em prancha."},
-{n:"Face pull",img:"Face_Pull",r:"12–15",d:"45''",c:"Corda à altura da cara, puxar para os olhos com cotovelos altos. Postura e ombros saudáveis."},
-{n:"Dead bug",img:"Dead_Bug",r:"6–8 / lado",d:"45''",c:"Lombar colada ao chão; estender braço e perna opostos devagar."},
-{n:"Prancha",img:"Plank",r:"20–40''",d:"45''",c:"Glúteos e abdominais apertados, corpo em linha."}]},
-C:{n:"C — Glúteos e posteriores (anca)",t:"inf",ex:[
-{n:"Peso morto romeno (halteres ou barra)",img:"Romanian_Deadlift",r:"8–10",d:"2'",m:1,c:"Joelhos ligeiramente fletidos, levar a anca atrás com as costas neutras até sentir os posteriores; subir apertando os glúteos. Carga leve nas 2 primeiras semanas."},
-{n:"Agachamento búlgaro",img:"Split_Squat_with_Dumbbells",r:"8–10 / perna",d:"90''",m:1,c:"Pé de trás num banco. Tronco ligeiramente à frente = mais glúteo. Começar sem peso."},
-{n:"Ponte de glúteos",img:"Butt_Lift_Bridge",r:"12–15",d:"60''",c:"No chão, com halter ou disco na anca. Pausa 2 s em cima."},
-{n:"Prensa de pernas (pés altos)",img:"Leg_Press",r:"10–12",d:"90''",c:"Pés altos e afastados na plataforma = mais glúteo e posteriores. Não tirar a lombar do banco."},
-{n:"Step-ups",img:"Dumbbell_Step_Ups",r:"8–10 / perna",d:"60''",c:"Caixa à altura do joelho; empurrar pelo calcanhar da perna de cima, sem impulso da de baixo."},
+A:{n:"A — Glúteos e pernas (máquinas)",t:"inf",ex:[
+{n:"Prensa de pernas",img:"Leg_Press",r:"10–12",d:"90''",m:1,c:"Costas e anca sempre encostadas. Pés à largura dos ombros. Descer devagar, empurrar pelos calcanhares, sem trancar os joelhos. Começar leve."},
+{n:"Hip thrust na máquina (ou Smith)",img:"Barbell_Hip_Thrust",r:"10–12",d:"90''",m:1,c:"Costas apoiadas, queixo ao peito. Subir a anca e apertar os glúteos 1 s em cima. Sem arquear as costas."},
+{n:"Extensão de pernas (máquina)",img:"Leg_Extensions",r:"12–15",d:"60''",c:"Encosto ajustado ao joelho. Subir, segurar 1 s, descer devagar."},
+{n:"Curl de pernas sentada (máquina)",img:"Seated_Leg_Curl",r:"10–12",d:"60''",c:"Joelho alinhado com o eixo da máquina. Puxar para baixo e voltar devagar (3 s)."},
+{n:"Abdução na máquina",img:"Thigh_Abductor",r:"12–15",d:"60''",c:"Tronco um pouco inclinado à frente para sentir mais o glúteo. Pausa 1 s aberta."},
+{n:"Coice de glúteo (máquina ou cabo)",img:"Glute_Kickback",r:"12–15 / perna",d:"45''",c:"Empurrar a perna para trás sem arquear as costas; apertar o glúteo."}]},
+B:{n:"B — Tronco superior e core (máquinas)",t:"sup",ex:[
+{n:"Puxada ao peito (pulldown)",img:"Wide-Grip_Lat_Pulldown",r:"10–12",d:"75''",m:1,c:"Peito alto, puxar a barra até ao peito com os cotovelos para baixo. Sem balançar."},
+{n:"Chest press (máquina)",img:"Leverage_Chest_Press",r:"10–12",d:"75''",c:"Pegas à altura do peito, costas encostadas. Empurrar e voltar devagar."},
+{n:"Remada sentada (cabo ou máquina)",img:"Seated_Cable_Rows",r:"10–12",d:"75''",c:"Costas direitas, puxar para o umbigo, juntar as omoplatas."},
+{n:"Press de ombros (máquina)",img:"Leverage_Shoulder_Press",r:"10–12",d:"75''",c:"Costas encostadas, pegas à altura dos ombros. Subir sem trancar os cotovelos."},
+{n:"Reverse fly (máquina)",img:"Reverse_Machine_Flyes",r:"12–15",d:"45''",c:"Peito encostado, braços abertos para trás, juntar as omoplatas. Peso leve. Boa postura."},
+{n:"Dead bug",img:"Dead_Bug",r:"6–8 / lado",d:"45''",c:"Costas coladas ao chão; esticar braço e perna opostos devagar."},
+{n:"Prancha",img:"Plank",r:"20–40''",d:"45''",c:"Glúteos e barriga apertados, corpo em linha."}]},
+C:{n:"C — Glúteos e posteriores (máquinas)",t:"inf",ex:[
+{n:"Hip thrust na máquina (ou Smith)",img:"Barbell_Hip_Thrust",r:"8–12",d:"90''",m:1,c:"Pausa de 2 s em cima, apertar bem os glúteos."},
+{n:"Agachamento no Smith (ou prensa com pés altos)",img:"Smith_Machine_Squat",r:"10–12",d:"90''",m:1,c:"A barra guia o movimento. Pés um pouco à frente, descer até onde as costas ficam direitas. Começar só com a barra."},
+{n:"Extensão lombar 45° (foco glúteo)",img:"Hyperextensions_Back_Extensions",r:"12–15",d:"60''",c:"Anca na almofada, costas ligeiramente arredondadas, subir apertando os glúteos até ficar em linha. Sem peso no início."},
+{n:"Curl de pernas deitada (máquina)",img:"Lying_Leg_Curls",r:"10–12",d:"60''",c:"Anca colada ao banco, 3 s a descer."},
+{n:"Adução na máquina",img:"Thigh_Adductor",r:"12–15",d:"45''",c:"Fechar as pernas devagar e controlar a abertura."},
 {n:"Abdução na máquina",img:"Thigh_Abductor",r:"15–20",d:"45''",c:"Últimas reps com pausa aberta."},
-{n:"Prancha lateral",img:"Side_Bridge",r:"20–30'' / lado",d:"30''",c:"Anca alta, corpo em linha."}]},
+{n:"Prancha lateral",img:"Side_Bridge",r:"15–30'' / lado",d:"30''",c:"Pode apoiar os joelhos. Anca alta."}]},
 D:{n:"D (opcional, a partir da semana 7) — Glúteos e pernas 3",t:"inf",ex:[
-{n:"Hip thrust (barra ou máquina)",img:"Barbell_Hip_Thrust",r:"10–15",d:"90''",m:1,c:"Variar: pausa de 2 s em cima ou reps mais altas que na sessão A."},
-{n:"Lunge para trás com halteres",img:"Dumbbell_Rear_Lunge",r:"8–10 / perna",d:"90''",c:"Passo atrás, joelho da frente estável, tronco ligeiramente à frente."},
-{n:"Prensa de pernas (pés altos)",img:"Leg_Press",r:"12–15",d:"90''",c:"Amplitude completa controlada."},
-{n:"Curl de pernas deitada",img:"Lying_Leg_Curls",r:"12–15",d:"60''",c:"3 s a descer."},
-{n:"Coice no cabo (kickback)",img:"Glute_Kickback",r:"15 / perna",d:"45''",c:"Apertar o glúteo em cima."},
+{n:"Hip thrust na máquina (ou Smith)",img:"Barbell_Hip_Thrust",r:"12–15",d:"90''",m:1,c:"Reps mais altas que na sessão A."},
+{n:"Prensa de pernas (pés altos)",img:"Leg_Press",r:"12–15",d:"90''",c:"Pés altos e afastados = mais glúteo. Lombar sempre encostada."},
+{n:"Extensão de pernas (máquina)",img:"Leg_Extensions",r:"15",d:"60''",c:"Segurar 1 s em cima."},
+{n:"Curl de pernas sentada (máquina)",img:"Seated_Leg_Curl",r:"12–15",d:"60''",c:"3 s a voltar."},
+{n:"Coice de glúteo (máquina ou cabo)",img:"Glute_Kickback",r:"15 / perna",d:"45''",c:"Apertar o glúteo em cima."},
 {n:"Abdução na máquina",img:"Thigh_Abductor",r:"15–20",d:"45''",c:"Série final até RPE 8."}]}};
 const FASES=[
 {w:[1,2],n:"Técnica e adaptação",s:2,rpe:"5–6",x:"Cargas leves, aprender o movimento, sem dor. Anotar o peso usado em cada exercício."},
 {w:[3,4],n:"Base",s:3,rpe:"6–7",x:"3 séries. Subir a carga só quando todas as séries chegam ao topo das reps."},
-{w:[5,8],n:"Progressão 1",s:3,rpe:"7–8",x:"Dupla progressão: quando fizer o topo das reps em todas as séries com RPE ≤8, subir 2,5–5% (ou o menor salto da máquina) e voltar ao fundo da gama. Exercícios principais com 4 séries. A partir da semana 7 pode juntar o dia D (opcional)."},
+{w:[5,8],n:"Progressão 1",s:3,rpe:"7–8",x:"Dupla progressão: quando fizer o topo das reps em todas as séries com RPE ≤8, subir 2,5–5% (ou o menor salto da máquina) e voltar ao fundo da gama. Exercícios principais com 4 séries. Começar sempre com cargas leves nas máquinas (2 primeiras semanas a aprender). A partir da semana 7 pode juntar o dia D (opcional)."},
 {w:[9,9],n:"Semana leve",s:2,rpe:"6",x:"Menos séries, mesma técnica. Recuperar."},
 {w:[10,12],n:"Progressão 2",s:3,rpe:"7–8 (principais até 8–9)",x:"Mesma regra. Principais com 4 séries. Dia D opcional. Na semana 12: reavaliar fotos, medidas e cargas."}];
 const SCHED={A:{1:"A",4:"B",5:"C"},B:{1:"A",3:"B",4:"C"}};
